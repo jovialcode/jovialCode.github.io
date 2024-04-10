@@ -1,0 +1,23 @@
+.Layout {
+    position: relative;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+.BodyWrapper{
+    position: relative;
+
+    width: 100%;
+    max-width: var(--page-width);
+    height: calc(100vh - var(--header-height));
+    margin: 0 auto;
+
+    background: #ffffff;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1), -5px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ContentWrapper {
+    margin: 0 auto;
+    padding: var(--page-padding);
+}
