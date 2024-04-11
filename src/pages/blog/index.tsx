@@ -1,31 +1,50 @@
-import React from 'react';
+import React from "react"
 import { graphql, Link, PageProps } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
+import * as classes from './style.module.css';
 import { Layout } from "../../components/Layout"
 
 const Index: React.FC<PageProps> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
+  const groupedByCategory: { [key: string]: Post[] } = posts.reduce((acc, post) => {
+    const category = post.node.frontmatter.category
+    if (!acc[category]) {
+      acc[category] = []
+    }
+    acc[category].push(post)
+    return acc
+  }, {})
+
   return (
     <Layout>
       <section>
-        {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => {
-            return (
-              <div className="blog-post-preview" key={post.id}>
-                <h1>
-                  <Link to={post.frontmatter.slut}>{post.frontmatter.title}</Link>
-                </h1>
-                <h2>{post.frontmatter.date}</h2>
-                <p>{post.excerpt}</p>
-              </div>
-            )
-          })}
+        {Object.keys(groupedByCategory)
+          .map(category => (
+            <div className={classes.Category} key={category}>
+              <h2 className={"flex items-center"}>
+                <StaticImage src={"../../static/images/scroll.png"} width={20} height={20} alt={"scroll"} className={"mr-2"}/>
+                {category}
+              </h2>
+              {
+                groupedByCategory[category]
+                  .map(({ node: post }) => (
+                    <div className="blog-post-preview" key={post.id}>
+                      <span className={"mr-2"}>{post.frontmatter.date}</span>
+                      <span className={"font-bold"}>
+                        <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
+                      </span>
+                    </div>
+                  ))
+              }
+          </div>
+        ))}
       </section>
     </Layout>
   )
 }
 
-export default Index;
+export default Index
 
 export const pageQuery = graphql`
   query {
@@ -37,9 +56,10 @@ export const pageQuery = graphql`
           title
           date
           slug
+          category
+        }
         }
       }
     }
-  }
   }
 `

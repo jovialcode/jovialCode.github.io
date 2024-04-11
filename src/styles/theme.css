@@ -9,7 +9,7 @@ body[data-theme='lightTheme'] {
     --scroll-bar-color: rgba(0, 0, 0, 0.5);
     --box-shadow-color: rgba(0, 0, 0, 0.16);
     --box-shadow-hover-color: rgba(0, 0, 0, 0.32);
-    --base-font: 'Roboto', Arial, sans-serif;
+    --base-font: 'NotoSans-Regular', 'Roboto', Arial, sans-serif;
     --code-block-bg: #f5f6f9;
     --code-block-var: #da0078;
     --code-block-num: #bf04b7;
@@ -30,7 +30,7 @@ body[data-theme='darkTheme'] {
     --scroll-bar-color: rgba(255, 255, 255, 0.5);
     --box-shadow-color: rgba(0, 0, 0, 0.16);
     --box-shadow-hover-color: rgba(0, 0, 0, 0.32);
-    --base-font: 'Roboto', Arial, sans-serif;
+    --base-font: 'NotoSans-Regular', 'Roboto', Arial, sans-serif;
     --code-block-bg: #151f28;
     --code-block-var: #ff39a7;
     --code-block-num: #fed703;

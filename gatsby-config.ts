@@ -28,7 +28,10 @@ const config: GatsbyConfig = {
                 "paragraph": "text-base"
               }
             }
-          }
+          },
+          {
+            resolve: `gatsby-remark-highlight-code`,
+          },
         ]
       }
     },

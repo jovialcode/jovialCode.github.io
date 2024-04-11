@@ -10,7 +10,7 @@
 
     width: 100%;
     max-width: var(--page-width);
-    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
     margin: 0 auto;
 
     background: #ffffff;

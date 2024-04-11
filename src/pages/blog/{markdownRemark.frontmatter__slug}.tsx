@@ -1,6 +1,11 @@
 import React from 'react'
 import { graphql, PageProps } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+
 import { Layout } from "../../components/Layout"
+
+deckDeckGoHighlightElement();
 
 interface PostData {
   markdownRemark: {
@@ -15,12 +20,15 @@ interface PostData {
 
 const PostTemplate: React.FC<PageProps<PostData>> = ({ data }) => {
   const post = data.markdownRemark
-
+  let featuredImg = getImage(post.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData)
   return (
     <Layout>
-      <div className={"markdown"}>
+      <div className={"Blog markdown"}>
         <h1>{post.frontmatter.title}</h1>
-        <p>{post.frontmatter.date}</p>
+        <p className={"text-end mb-2"}>{post.frontmatter.date}</p>
+        <div className={"text-center"}>
+          <GatsbyImage image={featuredImg} alt={"entrance"}/>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -35,6 +43,11 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         slug
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(width: 600)
+          }
+        }
       }
     }
   }
