@@ -1,8 +1,8 @@
 ---
-slug: "switch-statement2"
-title: "Switch statement2"
-date: "2023-04-20"
-category: "C++"
+slug: "start-flink"
+title: "I love Flink"
+date: "2023-04-26"
+category: "Flink"
 featuredImage: "../static/images/contents/java_.png"
 ---
 

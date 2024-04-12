@@ -60,7 +60,7 @@ a:hover {
 
 h1 {
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     color: var(--text-color);
     margin: 1rem 0;
@@ -68,7 +68,7 @@ h1 {
 
 h2 {
     font-weight: 700;
-    font-size: 1.625rem;
+    font-size: 1.4rem;
     line-height: 2rem;
     color: var(--text-color);
     margin: 2rem 0 1rem 0;
@@ -76,7 +76,7 @@ h2 {
 
 h3 {
     font-weight: 700;
-    font-size: 1.375rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     color: var(--text-color);
     margin: 2rem 0 1rem 0;
@@ -84,7 +84,7 @@ h3 {
 
 h4 {
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     color: var(--text-color);
     margin: 2rem 0 1rem 0;
@@ -117,5 +117,17 @@ u:hover {
 @media screen and (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
     }
 }

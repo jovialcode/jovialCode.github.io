@@ -2,22 +2,23 @@ import React from 'react';
 
 import * as classes from './style.module.css';
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 export const Header = (): React.ReactElement => {
-  const [open, setOpen] = React.useState<boolean>(false);
-
   return (
     <header className={classes.Header}>
       <div className={classes.Logo} >
-        <StaticImage src={"../../../static/images/logo.png"} alt={"logo"}/>
+        <Link to={"/blog"}>
+          <StaticImage src={"../../../static/images/logo.png"} alt={"logo"}/>
+        </Link>
       </div>
       <nav>
         <ul className={classes.TopNavigationBar}>
           <li>
-            <a href="#">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
