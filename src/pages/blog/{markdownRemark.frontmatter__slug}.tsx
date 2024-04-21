@@ -25,7 +25,7 @@ const PostTemplate: React.FC<PageProps<PostData>> = ({ data }) => {
     <Layout>
       <div className={"Blog markdown"}>
         <h1>{post.frontmatter.title}</h1>
-        <p className={"text-end mb-2"}>{post.frontmatter.date}</p>
+        <p className={"mb-2 text-gray-400"}>{post.frontmatter.date}</p>
         <div className={"text-center"}>
           <GatsbyImage image={featuredImg} alt={"entrance"}/>
         </div>
