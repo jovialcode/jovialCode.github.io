@@ -57,6 +57,14 @@ const config: GatsbyConfig = {
       },
       __key: "content",
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-YWKX364PY", // Google Analytics / GA
+        ],
+      },
+    },
   ],
 }
 
