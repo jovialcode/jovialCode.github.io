@@ -121,6 +121,10 @@ u:hover {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --page-padding: 3rem 2.5rem; /* 작은 화면에 대한 값 */
+    }
+
     html {
         font-size: 14px;
     }
@@ -130,4 +134,11 @@ u:hover {
     html {
         font-size: 16px;
     }
+}
+
+/*plugins*/
+deckgo-highlight-code {
+    --deckgo-highlight-code-font-family: 'Roboto Mono';
+    --deckgo-highlight-code-white-space: pre-wrap;
+    --deckgo-highlight-code-font-size: 0.9rem;
 }
