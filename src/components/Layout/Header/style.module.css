@@ -4,6 +4,8 @@
     align-items: center;
 
     width: 100%;
+    max-width: var(--page-width);
+
     height: auto;
     min-height: var(--header-height);
 

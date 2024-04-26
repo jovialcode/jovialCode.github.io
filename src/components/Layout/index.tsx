@@ -4,7 +4,6 @@ import '../../styles/theme.css';
 
 import * as classes from './style.module.css';
 import { Header } from "./Header"
-import { StaticImage } from "gatsby-plugin-image"
 
 interface LayoutProps {
   children: React.ReactElement;
@@ -13,8 +12,8 @@ interface LayoutProps {
 export function Layout(props: LayoutProps): React.ReactElement {
   return (
     <div className={classes.Layout}>
-      <Header />
       <div className={classes.BodyWrapper}>
+        <Header />
         <main className={classes.ContentWrapper}>
           {props.children}
         </main>
