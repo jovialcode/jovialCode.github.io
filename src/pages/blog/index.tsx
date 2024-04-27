@@ -23,7 +23,7 @@ const Index: React.FC<PageProps> = ({ data }) => {
           .map(category => (
             <div className={classes.Category} key={category}>
               <h2 className={"flex items-center"}>
-                <StaticImage src={"../../static/images/scroll.png"} width={20} height={20} alt={"scroll"} className={"mr-2"}/>
+                <StaticImage src={"../../static/images/scroll.png"} width={25} height={25} alt={"scroll"} className={"mr-2"}/>
                 {category}
               </h2>
               {

@@ -141,4 +141,5 @@ deckgo-highlight-code {
     --deckgo-highlight-code-font-family: 'Roboto Mono';
     --deckgo-highlight-code-white-space: pre-wrap;
     --deckgo-highlight-code-font-size: 0.9rem;
+    --deckgo-highlight-code-carbon-box-shadow: null;
 }

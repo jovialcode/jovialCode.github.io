@@ -36,8 +36,28 @@ const config: GatsbyConfig = {
               theme: "blackboard",
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 600,
+              wrapperStyle: "margin: 1rem auto"
+            },
+          },
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: "gatsby-plugin-manifest",

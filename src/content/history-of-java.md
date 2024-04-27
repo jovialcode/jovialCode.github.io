@@ -3,7 +3,7 @@ slug: "history-of-java"
 title: "History of Java"
 date: "2023-03-11"
 category: "Java"
-featuredImage: "../static/images/contents/java_history.png"
+featuredImage: "../static/images/contents/java/java_history.png"
 ---
 
 ### Intro

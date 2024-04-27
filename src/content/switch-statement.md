@@ -3,7 +3,7 @@ slug: "switch-statement"
 title: "Switch statement"
 date: "2023-04-20"
 category: "Java"
-featuredImage: "../static/images/contents/switch_expression.png"
+featuredImage: "../static/images/contents/java/switch_expression.png"
 ---
 ### Intro
 Switch Statement Java 1.0부터 지원한 문법이며 주로 if-else 문이 중첩되거나 복잡해질 때 코드의 가독성을 높이기 위해 사용됩니다. 여러 버전을 거치면서 기능이 보완되고 Switch Expression이 추가됨으로써 코드 작성의 편의성과 가독성이 향상되었습니다.
