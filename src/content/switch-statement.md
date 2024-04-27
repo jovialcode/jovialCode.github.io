@@ -9,7 +9,9 @@ featuredImage: "../static/images/contents/java/switch_expression.png"
 Switch Statement Java 1.0부터 지원한 문법이며 주로 if-else 문이 중첩되거나 복잡해질 때 코드의 가독성을 높이기 위해 사용됩니다. 여러 버전을 거치면서 기능이 보완되고 Switch Expression이 추가됨으로써 코드 작성의 편의성과 가독성이 향상되었습니다.
 
 ### Switch Statement
-Java 1.0 버전에서 Primitive 타입만 비교하였습니다. 그러다가 Java5에서 Primitive 타입에 대한 Wrapper 타입도 추가되었으며 Java5 사양에 Enum 타입이 추가되면서 Switch Statement에서도 Enum 타입이 사용 가능해졌습니다. Java7에 String 타입이 추가되면서 우리가 익히 사용하는 Switch Statement 문법을 갖추게 되었습니다.
+Java 1.0 버전에서 Primitive 타입만 비교하였습니다. 
+Java5에서 Primitive 타입에 대한 Wrapper 타입도 추가되었으며 Java5 사양에 Enum 타입이 추가되면서 Switch Statement에서 Enum 타입이 사용 가능해졌습니다.
+Java7에 String 타입이 추가되면서 익히 사용하는 Switch Statement 문법을 갖추게 되었습니다.
 
 ```java
 public String dayName(){
@@ -50,8 +52,8 @@ public String dayName(){
 ### Switch Expression
 
 Java 12에서 처음 소개 되었으며 Java13, 14를 거치면서 약간 개선되었습니다.  자세한 내용은 JEP 361을 읽어봅시다.
-Expression과 Statement 용어가 헷갈릴 수 있어 간단하게 정리하면 Statement는 if, while, for와 같은 명령어 입니다.
-그리고 Expression은 값을 반환합니다. 아래 예시를 바탕으로 Statement와 Expression을 정리해보세요.
+Expression과 Statement 용어가 헷갈릴 수 있어 간단하게 정리하면 Statement는 if, while, for와 같은 명령어 입니다.  
+Expression은 값을 반환합니다. 아래 예시를 바탕으로 Statement와 Expression을 정리해보세요.
 
 ```java
 5 // Expression

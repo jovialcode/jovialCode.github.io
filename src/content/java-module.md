@@ -1,7 +1,7 @@
 ---
 slug: "module-java"
 title: "Modularity in Java"
-date: "2024-03-11"
+date: "2024-04-27"
 category: "Java"
 featuredImage: "../static/images/contents/java/java9_module_structure.png"
 ---

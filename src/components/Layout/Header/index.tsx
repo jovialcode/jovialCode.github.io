@@ -8,7 +8,7 @@ export const Header = (): React.ReactElement => {
   return (
     <header className={classes.Header}>
       <div className={classes.Logo} >
-        <Link to={"/blog"}>
+        <Link to={"/"}>
           <StaticImage src={"../../../static/images/logo.png"} alt={"logo"}/>
         </Link>
       </div>
