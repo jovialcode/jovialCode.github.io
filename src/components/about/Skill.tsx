@@ -9,7 +9,7 @@ interface SkillProps {
 
 export const Skill = ({ job, skills, children }: SkillProps) => {
   return (
-    <div className={"bg-amber-50 px-4 py-5 mb-4 shadow-sm"}>
+    <div className={"bg-gray-50 px-4 py-5 mb-4 shadow-sm"}>
       <h4 className={"m-0"}>{job}</h4>
       <div className={"px-3"}>
         <SkillTags skills={skills}/>

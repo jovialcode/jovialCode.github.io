@@ -49,7 +49,7 @@ const Index: React.FC<PageProps> = () => {
             &#128312;다국어 작업<br/>
           </Skill>
 
-          <div className={"bg-amber-50 px-4 py-5 mb-4 shadow-sm"}>
+          <div className={"bg-gray-50 px-4 py-5 mb-4 shadow-sm"}>
             <h4 className={"font-bold m-0"}>관심 기술</h4>
             <ul>
               <li>&#128312;데이터 스트리밍 - Flink, Kafka</li>
