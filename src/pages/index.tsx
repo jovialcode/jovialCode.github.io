@@ -11,7 +11,13 @@ const Index: React.FC<PageProps> = () => {
     <Layout>
       <section>
         <h2>Playground</h2>
-
+        <div>
+          <h3>Algorithm</h3>
+          <p>
+            https://github.com/jovialcode/algorithm<br/>
+            https://www.acmicpc.net/user/zealtez<br/>
+          </p>
+        </div>
       </section>
     </Layout>
   )

@@ -10,7 +10,7 @@ Switch Statement Java 1.0부터 지원한 문법이며 주로 if-else 문이 중
 
 ### Switch Statement
 Java 1.0 버전에서 Primitive 타입만 비교하였습니다. 
-Java5에서 Primitive 타입에 대한 Wrapper 타입도 추가되었으며 Java5 사양에 Enum 타입이 추가되면서 Switch Statement에서 Enum 타입이 사용 가능해졌습니다.
+Java5에서 Primitive 타입에 대한 Wrapper 타입도 추가되었으며 Java5에 Enum 타입이 추가되면서 Switch Statement에서도 Enum 타입을 사용할 수 있습니다.
 Java7에 String 타입이 추가되면서 익히 사용하는 Switch Statement 문법을 갖추게 되었습니다.
 
 ```java
@@ -91,9 +91,44 @@ public String emotion(Day day){
 
 ```
 
-### 주의사항
+### Don't forget it
 
-Switch문은 if else보다 코드를 읽기 쉽게 하지만 작성시 주의사항이 있습니다.
+Switch Statement/Expression 문법에는 몇가지 주의사항이 있습니다.  
+1.Switch Statement에서는 Break 문을 작성해야 합니다.  
+case 3 라벨에서 break문이 없는 경우 default까지 실행되어 Unknown으로 설정됩니다. 
+```java
+public String dayName(){
+    int dayOfWeek = 3;
+    String dayName;
+    switch (dayOfWeek) {
+        case 1:
+            dayName = "Sunday";
+            break;
+        case 2:
+            dayName = "Monday";
+            break;
+        case 3:
+            dayName = "Tuesday";
+            // break;가 없어 default 라벨까지 실행.
+        default:
+            dayName = "Unknown";
+            break;
+}
+return dayName;
+}
+```
+2.Switch Expression에서는 비교되는 모든 경우가 case 라벨로 선언되어야합니다. or default 문을 선언해야합니다.
+모든 경우가 case 라벨로 선언되지 않으면 컴파일 오류가 발생합니다.
+```java
+enum Day { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
 
-1. Break 문을 작성할 것
-2. Switch Expression에서는 비교되는 모든 경우가case 라벨로 선언되어야합니다. or default 문을 선언해야합니다.
+public String emotion(Day day){
+    String emotion = switch (day) {
+        case Monday, Tuesday, Wednesday -> "What!";
+        case Thursday, Friday-> "Amm";
+        // case Frideay, Staturday 가 없어 컴파일 오류 발생
+    };
+    return emotion;
+}
+
+```

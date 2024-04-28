@@ -37,4 +37,33 @@ J2ME에는 모바일 애플리케이션에 최적화된 API가 포함되어 있�
 
 ### Major Feature
 Java의 주요 특징들을 하나씩 버전별로 정리해봅시다.
- 1. Switch Expression
+
+#### JDK 5
+- Generics
+- Enhanced for loop
+- Autoboxing and Unboxing
+- Enums
+#### JDK 6
+- Scripting API
+- Pluggable Annotation Processing
+#### JDK 7
+- Try-with-resources
+- Diamond Operator
+- Strings in switch
+- Fork/Join Framework
+#### JDK 8
+- Lambda Expression
+- Stream API
+- Default Methods
+- Date and Time API
+#### JDK 9
+- [모듈 시스템](/blog/module-java/)
+- Reactive Stream API
+- Private Methods in Interfaces
+#### JDK 10
+- Local Variable Type Inference(var)
+#### JDK 11
+- HTTP Client (Async)
+#### JDK 12
+- [Switch Expression](/blog/switch-statement/)
+- JVM Constants API
