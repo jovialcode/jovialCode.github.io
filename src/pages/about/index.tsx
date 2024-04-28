@@ -15,7 +15,7 @@ const Index: React.FC<PageProps> = () => {
     <Layout>
       <section>
         <div className={classes.About}>
-          <h2 className={"font-bold"}>Born to be DataEngineer.</h2>
+          <h2 className={"font-bold"}>Born to be <span className={"bg-gray-100"}>DataEngineer</span></h2>
           <p className={"mb-10"}>
             데이터를 잘 다루기 위해서 개발을 시작했습니다. <br/>
             <span className={"font-bold"}>Web FrontEnd/BackEnd, DataEngineer, MLOps </span>
