@@ -25,37 +25,37 @@ const Index: React.FC<PageProps> = () => {
           </p>
 
           <Skill job={"DataEngineer"} skills={dataEngineerSkills}>
-            <span className={"text-gray-500"}>•</span> 카카오 검색 서비스를 위한 블로그 데이터 수집<br/>
-            <span className={"text-gray-500"}>•</span> 크롤러 개발 및 유지보수<br/>
-            <span className={"text-gray-500"}>•</span> 하둡 클러스터와 API 서버들을 관리 및 모니터링<br/>
-            <span className={"text-gray-500"}>•</span> 데이터 후처리를 위한 MapReduce 개발<br/>
-            <span className={"text-gray-500"}>•</span> Hbase 데이터 마이그레이션 작업 <br/>
+            <span className={"text-indigo-500"}>•</span> 카카오 검색 서비스를 위한 블로그 데이터 수집<br/>
+            <span className={"text-indigo-500"}>•</span> 크롤러 개발 및 유지보수<br/>
+            <span className={"text-indigo-500"}>•</span> 하둡 클러스터와 API 서버들을 관리 및 모니터링<br/>
+            <span className={"text-indigo-500"}>•</span> 데이터 후처리를 위한 MapReduce 개발<br/>
+            <span className={"text-indigo-500"}>•</span> Hbase 데이터 마이그레이션 작업 <br/>
           </Skill>
 
           <Skill job={"MLOps"} skills={mlOpsSkills}>
-            <span className={"text-gray-500"}>•</span> 지식그래프 Name Entity Recognition(NER) / Entity Linking(EL) 모델 서빙<br/>
-            <span className={"text-gray-500"}>•</span> NER / EL 학습 파이프라인 개발<br/>
+            <span className={"text-indigo-500"}>•</span> 지식그래프 Name Entity Recognition(NER) / Entity Linking(EL) 모델 서빙<br/>
+            <span className={"text-indigo-500"}>•</span> NER / EL 학습 파이프라인 개발<br/>
           </Skill>
 
           <Skill job={"BackEnd"} skills={backEndSkills}>
-            <span className={"text-gray-500"}>•</span> AI 면접 백앤드<br/>
-            <span className={"text-gray-500"}>•</span> 채용 사이트 웹 솔루션 백앤드<br/>
-            <span className={"text-gray-500"}>•</span> MariaDB 데이터 마이그레이션 / Query 튜닝<br/>
+            <span className={"text-indigo-500"}>•</span> AI 면접 백앤드<br/>
+            <span className={"text-indigo-500"}>•</span> 채용 사이트 웹 솔루션 백앤드<br/>
+            <span className={"text-indigo-500"}>•</span> MariaDB 데이터 마이그레이션 / Query 튜닝<br/>
           </Skill>
 
           <Skill job={"FrontEnd"} skills={frontEndSkills}>
-            <span className={"text-gray-500"}>•</span> AI 면접 프론트<br/>
-            <span className={"text-gray-500"}>•</span> 채용 사이트 웹 솔루션 프론트<br/>
-            <span className={"text-gray-500"}>•</span> 다국어 작업<br/>
+            <span className={"text-indigo-500"}>•</span> AI 면접 프론트<br/>
+            <span className={"text-indigo-500"}>•</span> 채용 사이트 웹 솔루션 프론트<br/>
+            <span className={"text-indigo-500"}>•</span> 다국어 작업<br/>
           </Skill>
 
           <div className={"bg-gray-50 px-4 py-5 mb-4 shadow-sm"}>
             <h4 className={"font-bold m-0"}>관심 기술</h4>
             <ul>
-              <li><span className={"text-gray-500"}>•</span> 데이터 스트리밍 - Flink, Kafka</li>
-              <li><span className={"text-gray-500"}>•</span> 분산처리</li>
-              <li><span className={"text-gray-500"}>•</span> AI 서비스</li>
-              <li><span className={"text-gray-500"}>•</span> 고양이</li>
+              <li><span className={"text-indigo-500"}>•</span> 데이터 스트리밍 - Flink, Kafka</li>
+              <li><span className={"text-indigo-500"}>•</span> 분산처리</li>
+              <li><span className={"text-indigo-500"}>•</span> AI 서비스</li>
+              <li><span className={"text-indigo-500"}>•</span> 고양이</li>
             </ul>
           </div>
 
