@@ -17,7 +17,7 @@ const Index: React.FC<PageProps> = () => {
           <Project title={"Speaksalot"} tags={["gpt-3.5", "python3", "reactJS", "fastAPI"]}>
             <div className={"flex flex-col items-center"}>
               <a className={"block relative"} href={"https://speaksalot.com"} target={"_blank"}>
-                <img className={"absolute top-3 left-1"} width={190} src={speaksALotGif} alt={"project"}/>
+                <img className={"absolute top-2.5 left-1"} width={190} src={speaksALotGif} alt={"project"}/>
                 <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
               </a>
 
