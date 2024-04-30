@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql, Link, PageProps } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import * as classes from './style.module.css';
-import { Layout } from "../../components/Layout"
+import { Layout } from "../../components/layout/layout"
 
 const Index: React.FC<PageProps> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark

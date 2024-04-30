@@ -2,14 +2,14 @@ import React from 'react';
 import '../../styles/global.css';
 import '../../styles/theme.css';
 
-import * as classes from './style.module.css';
-import { Header } from "./Header"
+import * as classes from './layout.module.css';
+import { Header } from "./header"
 
 interface LayoutProps {
   children: React.ReactElement;
 }
 
-export function Layout(props: LayoutProps): React.ReactElement {
+export const Layout = (props: LayoutProps) => {
   return (
     <div className={classes.Layout}>
       <div className={classes.BodyWrapper}>

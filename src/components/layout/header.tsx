@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as classes from './style.module.css';
+import * as classes from './header.module.css';
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
@@ -9,7 +9,7 @@ export const Header = (): React.ReactElement => {
     <header className={classes.Header}>
       <div className={classes.Logo} >
         <Link to={"/"}>
-          <StaticImage src={"../../../static/images/logo.png"} alt={"logo"}/>
+          <StaticImage src={"../../static/images/logo.png"} alt={"logo"}/>
         </Link>
       </div>
       <nav>

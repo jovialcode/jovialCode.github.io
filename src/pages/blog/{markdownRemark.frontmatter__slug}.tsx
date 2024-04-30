@@ -3,7 +3,7 @@ import { graphql, PageProps } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 
-import { Layout } from "../../components/Layout"
+import { Layout } from "../../components/layout/layout"
 
 deckDeckGoHighlightElement();
 

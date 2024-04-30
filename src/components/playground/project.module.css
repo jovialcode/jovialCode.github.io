@@ -1,0 +1,10 @@
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+}
+.red { background-color: #ff7878; }
+.blue { background-color: #9393f8; }
+.yellow { background-color: #ffffb1; }

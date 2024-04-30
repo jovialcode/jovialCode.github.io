@@ -2,8 +2,8 @@ import React from "react"
 import { PageProps } from "gatsby"
 
 import * as classes from './style.module.css';
-import { Layout } from "../../components/Layout"
-import Skill from "../../components/about/Skill"
+import { Layout } from "../../components/layout/layout"
+import Skill from "../../components/about/skill"
 
 const Index: React.FC<PageProps> = () => {
   const dataEngineerSkills = ['Hadoop Ecosystem', 'Hbase', 'Java8', 'Jenkins', 'Spring', 'SpringBoot', 'VueJs', 'Puppeteer', 'Ansible'];
