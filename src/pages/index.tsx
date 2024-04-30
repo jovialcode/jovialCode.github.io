@@ -39,8 +39,11 @@ const Index: React.FC<PageProps> = () => {
 
           <Project title={"Algorithm"} tags={["java"]} image={"../../static/images/algorithm_profile.png"}>
             <div className={"flex flex-col"}>
-              <StaticImage className={"absolute top-2 left-1"} width={190} src={"../static/images/algorithm_profile.png"} alt={"project"}/>
-              <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
+              <a className={"block relative"} href={"https://www.acmicpc.net/user/zealtez"} target={"_blank"}>
+                <StaticImage className={"absolute top-2 left-1"} width={190} src={"../static/images/algorithm_profile.png"} alt={"project"}/>
+                <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
+              </a>
+
               <p className={"mt-3"}>
                 - leetcode <br/>
                 - baekjoon <br/>
