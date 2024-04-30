@@ -5,6 +5,7 @@ import { Layout } from "../components/layout/layout"
 import Project from "../components/playground/project"
 import { StaticImage } from "gatsby-plugin-image"
 import speaksALotGif from '../static/images/speaksalot.gif'
+import algoProfilePng from '../static/images/algorithm_profile.png'
 
 const Index: React.FC<PageProps> = () => {
   return (
@@ -16,7 +17,7 @@ const Index: React.FC<PageProps> = () => {
           <Project title={"Speaksalot"} tags={["gpt-3.5", "python3", "reactJS", "fastAPI"]}>
             <div className={"flex flex-col items-center"}>
               <a className={"block relative"} href={"https://speaksalot.com"} target={"_blank"}>
-                <img className={"absolute top-2 left-1"} width={190} src={speaksALotGif} alt={"project"}/>
+                <img className={"absolute top-3 left-1"} width={190} src={speaksALotGif} alt={"project"}/>
                 <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
               </a>
 
@@ -40,7 +41,7 @@ const Index: React.FC<PageProps> = () => {
           <Project title={"Algorithm"} tags={["java"]} image={"../../static/images/algorithm_profile.png"}>
             <div className={"flex flex-col"}>
               <a className={"block relative"} href={"https://www.acmicpc.net/user/zealtez"} target={"_blank"}>
-                <StaticImage className={"absolute top-2 left-1"} width={190} src={"../static/images/algorithm_profile.png"} alt={"project"}/>
+                <img className={"absolute top-2 left-1"} width={190} src={algoProfilePng} alt={"project"}/>
                 <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
               </a>
 
