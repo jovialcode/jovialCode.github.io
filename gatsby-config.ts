@@ -85,7 +85,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-YWKX364PY", // Google Analytics / GA
+          "G-YWKX364PYG", // Google Analytics / GA
         ],
       },
     },
