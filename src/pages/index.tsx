@@ -4,8 +4,10 @@ import type { PageProps } from "gatsby"
 import { Layout } from "../components/layout/layout"
 import Project from "../components/playground/project"
 import { StaticImage } from "gatsby-plugin-image"
-import speaksALotGif from '../static/images/speaksalot.gif'
-import algoProfilePng from '../static/images/algorithm_profile.png'
+
+import speaksALotGif from '../static/images/playground/speaksalot.gif'
+import algoProfilePng from '../static/images/playground/algorithm_profile.png'
+import crawlerPng from '../static/images/playground/crawler.png'
 
 const Index: React.FC<PageProps> = () => {
   return (
@@ -30,15 +32,19 @@ const Index: React.FC<PageProps> = () => {
 
           <Project title={"Crawler"} tags={["java", "multi-threading", "kafka", "mysql", "flink", "mongoDB", "event-driven", "reactJS"]}>
             <div className={"flex flex-col"}>
-              <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
+              <a className={"block relative"} href={"https://cat-fir-acd.notion.site/Crawler-86f26ec8976f4b0dad62cef902df4977"} target={"_blank"}>
+                <img className={"absolute top-20 left-1"} width={190} src={crawlerPng} alt={"project"}/>
+                <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
+              </a>
               <p className={"mt-3"}>
                 - 필요한 각종 데이터를 수집 <br/>
                 - 스트리밍 데이터 처리 <br/>
+                - kafka, flink 실습 <br/>
               </p>
             </div>
           </Project>
 
-          <Project title={"Algorithm"} tags={["java"]} image={"../../static/images/algorithm_profile.png"}>
+          <Project title={"Algorithm"} tags={["java"]} image={"../../static/images/playground/algorithm_profile.png"}>
             <div className={"flex flex-col"}>
               <a className={"block relative"} href={"https://www.acmicpc.net/user/zealtez"} target={"_blank"}>
                 <img className={"absolute top-2 left-1"} width={190} src={algoProfilePng} alt={"project"}/>
