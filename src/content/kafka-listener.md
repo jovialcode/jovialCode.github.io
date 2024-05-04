@@ -3,7 +3,7 @@ slug: "kafka-listener"
 title: "Kafka Listener"
 date: "2024-04-23"
 category: "Kafka"
-featuredImage: "../static/images/contents/java/kafka_listener.png"
+featuredImage: "../static/images/contents/kafka/kafka_listener.png"
 ---
 ### Kafaka Listener 어노테이션은 어떻게 동작하는걸까?
 

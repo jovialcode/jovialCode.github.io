@@ -38,6 +38,12 @@ J2ME에는 모바일 애플리케이션에 최적화된 API가 포함되어 있�
 ### Major Feature
 Java의 주요 특징들을 하나씩 버전별로 정리해봅시다.
 
+
+#### JDK 1.1
+#### JDK 1.2
+#### JDK 1.3
+#### JDK 1.4
+
 #### JDK 5
 - Generics
 - Enhanced for loop
