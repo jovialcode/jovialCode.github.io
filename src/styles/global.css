@@ -188,3 +188,8 @@ deckgo-highlight-code {
     px-2
     py-2
 }
+
+.Blog table th{
+    @apply
+    bg-lime-50
+}
