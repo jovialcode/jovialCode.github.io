@@ -157,13 +157,6 @@ deckgo-highlight-code {
     bg-gray-50
 }
 
-.Blog table{
-    @apply
-    border
-
-    m-2
-}
-
 .Blog code{
     @apply
     px-1
@@ -180,6 +173,19 @@ deckgo-highlight-code {
     mb-4
 }
 
+.Blog table{
+    @apply
+    table-auto
+    m-2
+
+    border
+}
+
+.Blog .tableWrapper{
+    @apply
+    mx-auto
+    overflow-x-auto
+}
 
 .Blog table td,
 .Blog table th{

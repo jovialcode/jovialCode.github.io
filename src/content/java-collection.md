@@ -33,12 +33,16 @@ Collection의 Interfaces는 `Iterable Interface`를 상속하는 `Set`, `List`, 
 # 
 
 ### Collection Implementations
+<div class="tableWrapper">
+
 | Interface | Hash Table                                                                  | Resizable Array                                                                   | Balanced Tree                                                               | Linked List | Hash Table + Linked List                                                                |
 | --- |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------| --- |-----------------------------------------------------------------------------------------|
 | Set | [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) |                                                                                   | [TreeSet](https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html) |  | [LinkedHashSet](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html) |
 | List |                                                                             | [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)   |                                                                             | [LinkedList](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html) |                                                                                         |
 | Deque |                                                                             | [ArrayDeque](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html) |                                                                             | [LinkedList](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html) |                                                                                         |
 | Map | [HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) |                                                                                   | [TreeMap](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html) |  | [LinkedHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html)             |
+
+</div>
 
 Collection 구현체는 어떻게 구현하는가에 따라 동작 방식이 조금씩 다릅니다. `Map Interface` 구현체들을 살펴보면 `Map`에서 `HashMap`, `TreeMap`, `LinkedList` 구현체가 있습니다.
 # 

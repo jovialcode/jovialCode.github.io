@@ -15,7 +15,7 @@ autoStart가 True일 경우 Registry에 등록되면서 KafkaListenerContainer�
 ConcurrentKafkaListenerContainer의 this.concurrency가 topicPartitions보다 큰 경우는 topicPartitions.length에 맞춰진다. 
 this.concurrency의 맞게 `KafkaMessageListenerContainer` 가 생성된다. 
 `KafkaMessageListenerContainer`에는 `ListenerConsumer`Inner Class가 존재하며 ConsumeRecord를 처리하는 것은 로직을 갖고 있다. 
-그러므로 this.concurrency에 따라서 Consumer가 개수가 결정된다. this.concurrency가 15이더라도 topics의 partitions의 개수에 따라 Consumer가 동작한다.
+그러므로 this.concurrency에 따라서 Consumer의 개수가 결정된다. this.concurrency가 15이더라도 topics의 partitions의 개수에 따라 Consumer가 동작한다.
 자세한 내용은 아래 공식홈페이지 인용글을 참고
 ### 
 > When listening to multiple topics, the default partition distribution may not be what you expect. For example, if you have three topics with five partitions each and you want to use `concurrency=15`, you see only five active consumers, each assigned one partition from each topic, with the other 10 consumers being idle. This is because the default Kafka `PartitionAssignor` is the `RangeAssignor` (see its Javadoc). For this scenario, you may want to consider using the `RoundRobinAssignor` instead, which distributes the partitions across all of the consumers. Then, each consumer is assigned one topic or partition. To change the `PartitionAssignor`, you can set the `partition.assignment.strategy` consumer property (`ConsumerConfigs.PARTITION_ASSIGNMENT_STRATEGY_CONFIG`) in the properties provided to the `DefaultKafkaConsumerFactory`.
