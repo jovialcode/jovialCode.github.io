@@ -27,9 +27,10 @@ const Index: React.FC<PageProps> = () => {
           <Skill job={"DataEngineer"} skills={dataEngineerSkills}>
             <span className={"text-indigo-500"}>•</span> 카카오 검색 서비스를 위한 블로그 데이터 수집<br/>
             <span className={"text-indigo-500"}>•</span> 크롤러 개발 및 유지보수<br/>
-            <span className={"text-indigo-500"}>•</span> 하둡 클러스터와 API 서버들을 관리 및 모니터링<br/>
+            <span className={"text-indigo-500"}>•</span> 하둡 클러스터와 API 서버 관리 및 모니터링<br/>
+            <span className={"text-indigo-500"}>•</span> 크롤러 운영툴 웹 개발<br/>
             <span className={"text-indigo-500"}>•</span> 데이터 후처리를 위한 MapReduce 개발<br/>
-            <span className={"text-indigo-500"}>•</span> Hbase 데이터 마이그레이션 작업 <br/>
+            <span className={"text-indigo-500"}>•</span> Hbase 데이터 마이그레이션 작업 및 테이블 설계 <br/>
           </Skill>
 
           <Skill job={"MLOps"} skills={mlOpsSkills}>

@@ -57,7 +57,7 @@ Collection 구현체는 어떻게 구현하는가에 따라 동작 방식이 조
 
 다른 자료구조 구현체들도 동작 방식이 조금씩 다르므로 한번씩 살펴보면 좋을 것 같습니다.
 # 
-Collection 구현체 중 일부는 쓰레드 세이프하지 않은 구현체가 있습니다.  
+Collection 구현체 중 일부는 `Thread-Safe`하지 않은 구현체가 있습니다.  
 - ArrayList 
 - LinkedList
 - HashMap
