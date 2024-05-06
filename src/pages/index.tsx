@@ -6,6 +6,7 @@ import Project from "../components/playground/project"
 import { StaticImage } from "gatsby-plugin-image"
 
 import speaksALotGif from '../static/images/playground/speaksalot.gif'
+import vocaWorldGif from '../static/images/playground/voca_world.gif'
 import algoProfilePng from '../static/images/playground/algorithm_profile.png'
 import crawlerPng from '../static/images/playground/crawler.png'
 
@@ -40,6 +41,19 @@ const Index: React.FC<PageProps> = () => {
                 - 필요한 각종 데이터를 수집 <br/>
                 - 스트리밍 데이터 처리 <br/>
                 - kafka, flink 실습 <br/>
+              </p>
+            </div>
+          </Project>
+
+          <Project title={"VocaWorld"} tags={["reactJS", "StyledComponent", "Typescript"]}>
+            <div className={"flex flex-col"}>
+              <a className={"block relative"} href={"https://github.com/jovialcode/voca-world"} target={"_blank"}>
+                <img className={"absolute top-20 left-1"} width={190} src={vocaWorldGif} alt={"project"}/>
+                <StaticImage width={200} src={"../static/images/phone.png"} alt={"project"}/>
+              </a>
+              <p className={"mt-3"}>
+                - 영어 단어 공부 <br/>
+                - SPA에서 Scene 동적 생성<br/>
               </p>
             </div>
           </Project>
