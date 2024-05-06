@@ -92,5 +92,5 @@ module moduleB {
 }
 ```
 
-#### 참고
+#### Reference
 - https://developer.ibm.com/tutorials/java-modularity-2/
