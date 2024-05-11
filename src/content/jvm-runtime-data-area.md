@@ -18,8 +18,8 @@ Java로 작성된 코드는 javac로 컴파일되어 바이트 코드(bytecode)�
 # 
 ### Runtime Data Area
 ![jvm](../static/images/contents/java/jvm-runtime-data-area-structure.png)
-JVM은 자바 프로그램을 실행하는 동안 필요한 데이터를 `PC Registers`, `Native Method Stacks`, `Java Stack`, `Method Area`, `Heap`의 영역으로 나눠 관리합니다.
-`PC Registers`, `Native Method Stacks`, `Java Stack`은 스레드마다 생성되는 영역이며 `Method Area`, `Heap`은 모든 스레드가 함께 공유하는 영역입니다.
+JVM은 자바 프로그램을 실행하는 동안 필요한 데이터를 `PC Register`, `Native Method Stack`, `Java Stack`, `Method Area`, `Heap`의 영역으로 나눠 관리합니다.
+`PC Register`, `Native Method Stack`, `Java Stack`은 스레드마다 생성되는 영역이며 `Method Area`, `Heap`은 모든 스레드가 함께 공유하는 영역입니다.
 
 ### PC Register(Program Counter Register)
 JVM에서의 멀티스레딩은 CPU 코어를 여러 스레드가 교대로 사용하는 방식으로 구현되기 때문에

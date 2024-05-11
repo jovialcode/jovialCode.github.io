@@ -201,3 +201,8 @@ deckgo-highlight-code {
     @apply
     bg-lime-50
 }
+
+.imageWrapper-maxheight-300{
+    @apply
+    h-4
+}
