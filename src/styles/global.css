@@ -206,3 +206,13 @@ deckgo-highlight-code {
     @apply
     h-4
 }
+
+.divCenter{
+    @apply
+    flex
+    justify-center
+}
+
+code{
+    font-family: 'NotoSans-Regular';
+}
