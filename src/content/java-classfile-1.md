@@ -1,6 +1,6 @@
 ---
-slug: "java-classfile"
-title: "Java ClassFile"
+slug: "java-classfile-1"
+title: "Java ClassFile - 1"
 date: "2024-05-12"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_bytecode.png"
