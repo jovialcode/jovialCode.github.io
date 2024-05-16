@@ -116,7 +116,7 @@ field_info {
 `access_flags`는 해당 필드가 `public`, `private`, `protected`인지 여부를 표현하는 바이트2 자리로 표현합니다.
 `name_index`는 필드의 단순 이름을 나타내며 `상수 풀`에서 `CONSTANT_NameAndType` 인덱스를 나타냅니다.
 `descriptor_index`는 `필드`의 경우 `데이터 타입`까지, `메서드`의 경우 `매개 변수 목록`(개수, 타입, 순서 포함)과 
-`반한값`까지 기술합니다. 
+`반환값`까지 기술합니다. 
 #
 **methods_count**  
 메소드 테이블의 개수를 나타내는 2바이트입니다.
