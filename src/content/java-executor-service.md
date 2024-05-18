@@ -19,12 +19,13 @@ Java에서 `Thread`를 생성하는 방법은 다음과 같습니다.
 
 ```java
 class NewThread extends Thread {
+    @Override
 	public void run() {
 		System.out.println("task");
 	}
 	public static void main(String[] args) {
         NewThread newThread = new NewThread();
-        NewThread.start();  // start()로 쓰레드를 실행한다.
+        NewThread.start();  // start()로 쓰레드를 실행합니다.
     }
 }
 ```
@@ -61,15 +62,18 @@ Tomcat과 같은 웹 서버에서는 여러 클라이언트의 요청을 동시�
 ### Executor Interface
 `Executor Interface`는 `Runnable`를 실행하는 execute() 메서드를 갖고 있는 인터페이스입니다.
 Task를 실행하는 가장 기본이 되는 인터페이스입니다.
-`Runnable Interface`는 `Thread` class를가 구현을 하는 인터페이스입니다. Task를 나타내며 다음과 같이 선언할 수 있습니다.
+# 
+`Runnable Interface`는 `Thread` class를가 구현을 하는 인터페이스이며 Task를 나타냅니다.
+`Runnable Interface`는 다음과 같이 선언할 수 있습니다.
 ```java
-public class Thread implements Runnable {
+public class Thread implements Runnable { 
+    // Thread는 Runnable 인터페이스를 구현합니다.
     ...
 }
 public static void main(String[] args) {
     // Task를 선언
     Runnable runnable = new Runnable() {
-        @override
+        @Override
         public void run(){
             System.out.println("task");
         }

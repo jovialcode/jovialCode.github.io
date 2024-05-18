@@ -7,7 +7,7 @@ featuredImage: "../static/images/contents/java/java_bytecode.png"
 ---
 
 ### Intro
-[`ClassFile-1`](/blog/java-classfile-1/) 에 이어서 클래스파일의 속성에 대해서 정리해보겠습니다.
+[`ClassFile-1`](/blog/java-classfile-1/) 에 이어서 클래스파일의 속성에 대해서 정리합니다.
 # 
 ### ClassFile Attribute
 ![Classfile](../static/images/contents/java/java_classfile.png)
@@ -31,6 +31,8 @@ attribute_info {
 # 
 `JVM`에서 정의한 속성은 최초 9개에서 JDK21에서는 총 30개로 늘었습니다. 
 간단하게 정리하면 아래와 같습니다.
+
+<div class="tableWrapper">
 
 | Attribute                                | 쓰이는 위치     | 의미                                                    |
 |-------------------------------------------|------------|--------------------------------------------------------|
@@ -62,6 +64,7 @@ attribute_info {
 | LocalVariableTypeTable                    | 클래스        | 로컬 변수의 제네릭 타입 정보                              |
 | MethodParameters                          | 메서드 테이블    | 메서드의 매개변수에 대한 정보                             |
 
+</div>
 몇 개의 주요한 속성들을 살펴보겠습니다.
 #
 ### Code 속성
