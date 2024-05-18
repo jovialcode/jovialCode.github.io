@@ -196,7 +196,7 @@ deckgo-highlight-code {
 
 .tableWrapper table td,
 .tableWrapper table th{
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .Blog table td,
