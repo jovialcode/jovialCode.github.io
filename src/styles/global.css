@@ -184,8 +184,18 @@ deckgo-highlight-code {
 
 .Blog .tableWrapper{
     @apply
-    mx-auto
     overflow-x-auto
+}
+
+.Blog .tableWrapper table{
+    @apply
+    table-fixed
+    border-collapse
+    w-full
+}
+
+.tableWrapper table td{
+    word-break: break-all;
 }
 
 .Blog table td,
