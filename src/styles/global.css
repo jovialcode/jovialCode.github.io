@@ -194,7 +194,8 @@ deckgo-highlight-code {
     w-full
 }
 
-.tableWrapper table td{
+.tableWrapper table td,
+.tableWrapper table th{
     word-break: break-all;
 }
 
