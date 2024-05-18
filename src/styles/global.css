@@ -177,7 +177,6 @@ deckgo-highlight-code {
 
 .Blog table{
     @apply
-    table-auto
     m-2
 
     border
