@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react"
-
+import * as classes from './skill.module.css';
 
 interface SkillProps {
   job: string;
@@ -42,7 +42,7 @@ const SkillTags = (props: SkillsProps): React.ReactElement => {
     <ul className={"my-3"}>
       {
         skills.map(skill => {
-          return <li className={"inline-block mr-2 my-1 px-2 border rounded-2xl border-indigo-500 "}>{skill}</li>
+          return <li className={`text-white ${classes.SkillTag} inline-block mr-2 my-1 px-2 border rounded-2xl border-black`}>{skill}</li>
         })
       }
     </ul>
