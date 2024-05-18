@@ -25,9 +25,9 @@ export default Skill;
 
 const SkillDescription = ({children}: ReactNode) => {
   return (
-    <p className={"mt-1"}>
+    <div className={"mt-1"}>
       {children}
-    </p>
+    </div>
   );
 }
 
@@ -42,7 +42,7 @@ const SkillTags = (props: SkillsProps): React.ReactElement => {
     <ul className={"my-3"}>
       {
         skills.map(skill => {
-          return <li className={`text-white ${classes.SkillTag} inline-block mr-2 my-1 px-2 border rounded-2xl border-black`}>{skill}</li>
+          return <li key={skill} className={`text-white ${classes.SkillTag} inline-block mr-2 my-1 px-2 border rounded-2xl border-black`}>{skill}</li>
         })
       }
     </ul>
