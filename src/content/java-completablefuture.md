@@ -22,7 +22,7 @@ featuredImage: "../static/images/contents/java/java_completablefuture.png"
 ### Future Interface
 `ExecutorService`를 사용하여 `Main Context`와 별도의 작업을 수행했는데 `Task`의 작업상태를 확인해야하는 경우가 있습니다. 
 예를 들어 `Task1`가 완료된 후에 `Task2`를 실행 해야하는 경우라면 `Task1`의 완료상태를 확인해야할 것입니다.
-다음과 같은 경우는 ExecutorService.submit()가 반환하는 작업상태를 참조하는 `Future`인터페이스를 사용해서 해결할 수 있습니다.
+다음과 같은 경우는 `ExecutorService.submit()`가 반환하는 작업상태를 참조하는 `Future`인터페이스를 사용해서 해결할 수 있습니다.
 
 
 ```java
@@ -126,8 +126,8 @@ try {
 }
 ```
 위 코드는`Task1`이 완료된 것을 확인한 다음`Task2`를 실행하는 코드입니다.
-`Task1`의 결과를 확인하고 `Task2`를 실행하기 위해서 Future.get()을 실행하는 것은
-`Task1`의 결과를 받기 위해서 대기해야하기 때문에 진정한 동시성이라고 보기 힘듬니다.
+`Task1`의 결과를 확인하고 `Task2`를 실행하기 위해서 `Future.get()`을 실행하는 것은
+`Task1`의 결과를 받기 위해서 대기해야하기 때문에 진정한 동시성이라고 보기 어렵습니다.
 그리고 2개의 `Task`를 실행하기 위해서 생각보다 긴 코드를 작성해야합니다. 
 만약 `Task3`을 실행해야 하는 상황이라면 더 장황한 코드를 생성해야합니다.
 `Future`인터페이스가 비동기작업에 대한 메서드를 제공하지만 실제 사용해보면 많은 제약사항이 있습니다.
@@ -148,7 +148,7 @@ try {
 ```java
 public class CompletableFuture<T> implements Future<T>, CompletionStage<T>
 ```
-CompletableFuture가 비동기 작업을 관리하기 위해서 제공하는 풍부한 메서드는 아래와 같습니다.
+`CompletableFuture`가 비동기 작업을 관리하기 위해서 제공하는 풍부한 메서드는 아래와 같습니다.
 <div class="TableWrapper">
 
 
@@ -173,7 +173,7 @@ CompletableFuture가 비동기 작업을 관리하기 위해서 제공하는 풍
 
 
 ![completable_future_method.png](../static/images/contents/java/java_completablefuture_method.png)
-`CompletableFuture`의 메서드의 return값은 또 다른 CompletableFuture을 반환합니다.
+`CompletableFuture`의 메서드의 return값은 또 다른 `CompletableFuture`을 반환합니다.
 그러므로 `Task1`의 작업이 완료되면 `thenRun`과 같은 메서드를 이용하여 다음 `Task2`를 손쉽게 수행할 수 있습니다.
 위 메서드들을 활용하여 `Future`인터페이스의 한계점을 `CompletableFuture`클래스는 어떻게 보완할 수 있는지 살펴보겠습니다. 
 
