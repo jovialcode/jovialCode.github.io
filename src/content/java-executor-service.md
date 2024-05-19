@@ -1,6 +1,6 @@
 ---
 slug: "java-executor-service"
-title: "Java Executors"
+title: "Executors"
 date: "2023-05-11"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_executorservice.png"
@@ -32,7 +32,7 @@ class NewThread extends Thread {
 
 `Thread` 클래스를 상속하여 run() 구현하고 Thread의 start()를 호출하면 Thread가 동작하게 됩니다. 이렇게 `Thread`를 구현하면 `Main Thread`와 별도의 작업을 수행할 수
 있습니다.
-`Thread`를 통해서 여러 작업을 동시에 실행할 수 있습니다.
+`Thread`를 통해서 여러 작업을 동시에 실행할 수 있습니다. `Thread`는 어떤 언어에서도 동시성 프로그래밍의 기본이됩니다.
 
 #  
 
@@ -108,7 +108,7 @@ class DirectExecutor implements Executor {
 ![java_executor.png](../static/images/contents/java/java_executor.png)
 `ExecutorService`는 `Executor`를 상속하여 `Thread`를 생성하고 관리하기 위한 메서드를 제공합니다.
 `ExecutorService`를 직접 구현하는 것은 어렵거나 시간이 걸리기 때문에 
-`Concurrent API`에서는 Executors 클래스를 이용해 병렬 처리에 필요한 여러가지 메소드를 정의해서 제공합니다.
+`Concurrent API`에서는 Executors 클래스를 이용해 병렬 처리에 필요한 여러가지 메서드를 정의해서 제공합니다.
 # 
 **newSingleThreadExecutor**
 - 하나의 스레드로 처리하어 하나의 `Task`만 처리됩니다.
@@ -149,4 +149,46 @@ public static ExecutorService newWorkStealingPool(int parallelism) {
          ForkJoinPool.defaultForkJoinWorkerThreadFactory,
          null, true);
 }
+```
+
+### Example
+`Executors`클래스를 통해서 싱글스레드플을 생성하여 Task를 실행할 수 있습니다.
+execute 메서드는 리턴값이 없는 Executor 인터페이스의 메서드입니다.
+```java
+{
+    ExecutorService exec = Executors.newSingleThreadExecutor();
+    Runnable runnable = () -> System.out.println("task");
+    exec.execute(runnable);
+}
+```
+만약 Task의 결과를 확인하기 위해서 `ExecutorService`.submit 메서드 사용해야합니다.
+`submit` 메서드는 실행결과에 대한 참조 객체 `Future`을 반환합니다.
+`Future`인터페이스의 `get()`을 실행하면 `Task`의 작업상태가 완료가 될 때까지 `Main-Thread`가 대기하게 됩니다.
+
+```java
+{
+    ExecutorService exec = Executors.newSingleThreadExecutor();
+    Runnable runnable = () -> System.out.println("task");
+    Future<?> submit = exec.submit(runnable);
+    submit.get(); 
+}
+```
+
+만약 Task의 실행결과에 반환값이 있는 경우는 `Runnable`대신 `Callable`인터페이스를 사용할 수 있습니다.
+`Callable` 인터페이스는 `Runnable` 인터페이스와 달리 제네릭 타입으로 결과를 반환하게 됩니다.
+
+```java
+@FunctionalInterface
+public interface Callable<V> {
+    V call() throws Exception;
+}
+
+ExecutorService exec = Executors.newSingleThreadExecutor();
+Callable<String> callable = () -> {
+    Thread.sleep(1000);
+    return "task";
+};
+Future<String> future = exec.submit(callable);
+String result = future.get();
+
 ```

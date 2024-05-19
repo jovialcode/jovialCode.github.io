@@ -1,6 +1,6 @@
 ---
 slug: "java-classfile-2"
-title: "Java ClassFile - 2"
+title: "ClassFile - 2"
 date: "2024-05-18"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_bytecode.png"

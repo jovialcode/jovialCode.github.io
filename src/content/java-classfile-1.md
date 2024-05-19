@@ -1,6 +1,6 @@
 ---
 slug: "java-classfile-1"
-title: "Java ClassFile - 1"
+title: "ClassFile - 1"
 date: "2024-05-12"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_bytecode.png"
@@ -53,9 +53,9 @@ ClassFile {
 # 
 `클래스파일`의 구조는 클래스를 나타내는 메타정보와 속성으로 이루어져있습니다.
 `attribute_info` 테이블이 클래스의 다양한 정보를 담고 있는 속성 테이블입니다.
-속성 테이블은 `클래스 속성 테이블`, `메소드 속성 테이블`, `필드 속성 테이블`이 있습니다.  
+속성 테이블은 `클래스 속성 테이블`, `메서드 속성 테이블`, `필드 속성 테이블`이 있습니다.  
 `클래스 속성 테이블`에는 `제네릭 매개 변수화 타입`, `java파일 이름`, `Inner 클래스 정보`가 있습니다.  
-`메소드 속성 테이블`에는 해당 `메소드의 코드`가 저장됩니다.  
+`메서드 속성 테이블`에는 해당 `메서드의 코드`가 저장됩니다.  
 `필드 속성 테이블`에는 final 키워드로 정의된 `상수값`이 저장됩니다.  
 속성 테이블에 대한 내용도 꽤 많은 내용이 있어 우선 클래스의 메타정보를 나타내는 타입을 살펴보겠습니다.
 #
@@ -119,7 +119,7 @@ field_info {
 `반환값`까지 기술합니다. 
 #
 **methods_count**  
-메소드 테이블의 개수를 나타내는 2바이트입니다.
+메서드 테이블의 개수를 나타내는 2바이트입니다.
 #
 **method_info**  
 ```java
@@ -131,7 +131,7 @@ method_info {
     attribute_info attributes[attributes_count];
 }
 ```
-`메소드 테이블`의 구조도 `필드의 테이블`구조와 동일합니다.
+`메서드 테이블`의 구조도 `필드의 테이블`구조와 동일합니다.
 `접근 범위제한자`(public, private, protected), `이름 인덱스`, `서술자 인덱스`입니다.
 `메서드의 본문(코드)`은 `속성 테이블`에 저장됩니다. 
 ### ByteViewer
@@ -188,8 +188,8 @@ Constant pool: //상수풀
   #23 = Utf8               Bytecode.java
 {
   public org.jovialcode.base.Bytecode();
-    descriptor: ()V //메소드 서술자
-    flags: (0x0001) ACC_PUBLIC // 메소드 접근제어자
+    descriptor: ()V //메서드 서술자
+    flags: (0x0001) ACC_PUBLIC // 메서드 접근제어자
     Code: //코드
       stack=1, locals=1, args_size=1
          0: aload_0
