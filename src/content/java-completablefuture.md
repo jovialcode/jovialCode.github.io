@@ -193,7 +193,7 @@ combinedFuture.thenAccept(System.out::println); // 결과: 3
 
 <div class="Line"></div>
 
-**여러 개의 `Future`인터페이스를 체이닝해서 사용하기 힘듭니다.**  
+**여러 개의 Future인터페이스를 체이닝해서 사용하기 힘듭니다.**  
 `then` 메서드의 결과값이 `CompletableFuture`이므로 비동기 작업을 체이닝하여 연결할 수 있습니다.
 ```java
 CompletableFuture.supplyAsync(() -> 1)
@@ -204,7 +204,7 @@ CompletableFuture.supplyAsync(() -> 1)
 
 <div class="Line"></div>
 
-**`Future`인터페이스는 수동으로 `completed`를 설정할 수 없습니다.**  
+**Future인터페이스는 수동으로 completed를 설정할 수 없습니다.**  
 `complete()` 메서드를 사용하여 수동으로 작업을 완료할 수 있습니다.
 ```java
 CompletableFuture<String> future = new CompletableFuture<>();
@@ -216,7 +216,7 @@ future.thenAccept(System.out::println);
 
 <div class="Line"></div>
 
-**`Future`인터페이스는 예외에 대한 처리가 부족합니다.**  
+**Future인터페이스는 예외에 대한 처리가 부족합니다.**  
 `exceptionally()` 메서드를 사용하여 예외를 처리할 수 있습니다.
 ```java
 CompletableFuture<String> future = new CompletableFuture<>();
@@ -231,7 +231,7 @@ future.exceptionally(ex -> {
 
 <div class="Line"></div>
 
-**`Task`가 완료됬을 때 `Callback`을 연결하기 어렵습니다.**  
+**Task가 완료됬을 때 Callback을 연결하기 어렵습니다.**  
 `thenApply`, `thenAccept`, `thenRun` 등의 메서드를 사용하여 작업 완료 시 콜백을 등록할 수 있습니다.
 ```java
 CompletableFuture.supplyAsync(() -> "Task result")
