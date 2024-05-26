@@ -177,7 +177,7 @@ deckgo-highlight-code {
 
 .Blog table{
     @apply
-    m-2
+    my-2
 
     border
 }
@@ -189,22 +189,16 @@ deckgo-highlight-code {
 
 .Blog .tableWrapper table{
     @apply
-    table-fixed
     border-collapse
-    w-full
-}
-
-.tableWrapper table td,
-.tableWrapper table th{
-    word-break: break-word;
 }
 
 .Blog table td,
 .Blog table th{
     @apply
     border
-    px-2
-    py-2
+    p-2
+
+    break-all
 }
 
 .Blog table th{
