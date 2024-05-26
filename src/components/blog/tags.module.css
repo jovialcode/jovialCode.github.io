@@ -1,0 +1,20 @@
+.Tags {
+    @apply
+    mt-1
+
+    text-sm
+}
+
+.Tag {
+    @apply
+    inline-block
+
+    mr-2 my-1 px-2
+
+    border
+    border-black
+    rounded-2xl
+
+    text-white
+    text-center
+}

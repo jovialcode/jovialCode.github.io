@@ -4,6 +4,7 @@ title: "Modularity"
 date: "2024-04-27"
 category: "Java"
 featuredImage: "../static/images/contents/java/java9_module_structure.png"
+tag: ["JDK9", "Module"]
 ---
 
 ### Intro

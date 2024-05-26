@@ -4,6 +4,7 @@ title: "Collection Framework"
 date: "2023-05-04"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_collection_hierarchy.jpg"
+tag: ["JDK1.2"]
 ---
 
 ### Intro

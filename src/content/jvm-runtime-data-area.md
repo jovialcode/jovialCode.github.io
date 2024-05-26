@@ -4,6 +4,7 @@ title: "Runtime Memory in JVM"
 date: "2024-05-06"
 category: "Java"
 featuredImage: "../static/images/contents/java/jvm.png"
+tag: ["Core"]
 ---
 
 ### Intro

@@ -4,6 +4,7 @@ title: "Executors"
 date: "2023-05-11"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_executorservice.png"
+tag: ["JDK1.5", "Concurrency"]
 ---
 
 ### Intro

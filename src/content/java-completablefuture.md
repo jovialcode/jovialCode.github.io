@@ -4,6 +4,7 @@ title: "Completablefuture"
 date: "2023-05-19"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_completablefuture.png"
+tag: ["JDK8", "Concurrency"]
 ---
 
 ### Intro

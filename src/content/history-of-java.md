@@ -4,6 +4,7 @@ title: "History of Java"
 date: "2023-03-11"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_history.png"
+tag: ["Core"]
 ---
 
 ### Intro

@@ -4,6 +4,7 @@ title: "ClassFile - 2"
 date: "2024-05-18"
 category: "Java"
 featuredImage: "../static/images/contents/java/java_bytecode.png"
+tag: ["Core"]
 ---
 
 ### Intro

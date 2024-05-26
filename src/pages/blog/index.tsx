@@ -1,8 +1,9 @@
 import React from "react"
 import { graphql, Link, PageProps } from "gatsby"
 
-import * as classes from './style.module.css';
+import * as classes from "./style.module.css"
 import { Layout } from "../../components/layout/layout"
+import { Tags } from "../../components/blog/tags"
 
 const Index: React.FC<PageProps> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
@@ -27,16 +28,21 @@ const Index: React.FC<PageProps> = ({ data }) => {
               {
                 groupedByCategory[category]
                   .map(({ node: post }) => (
-                    <div className="blog-post-preview" key={post.id}>
-                      <span className={"mr-2"}>{post.frontmatter.date}</span>
-                      <span className={"font-bold"}>
-                        <Link to={post.frontmatter.slug}>{post.frontmatter.title}</Link>
-                      </span>
-                    </div>
+                    <Link className={"block"} to={post.frontmatter.slug} key={post.id}>
+                      <div className={classes.blogPostPreview}>
+                        <div>
+                          <span className={"mr-2"}>{post.frontmatter.date}</span>
+                        </div>
+                        <div>
+                          <span className={classes.blogPostTitle}>{post.frontmatter.title}</span>
+                          {post.frontmatter.tag && <Tags tags={post.frontmatter.tag} />}
+                        </div>
+                      </div>
+                    </Link>
                   ))
               }
-          </div>
-        ))}
+            </div>
+          ))}
       </section>
     </Layout>
   )
@@ -57,9 +63,10 @@ export const pageQuery = graphql`
           date
           slug
           category
-        }
+          tag
         }
       }
     }
   }
+}
 `

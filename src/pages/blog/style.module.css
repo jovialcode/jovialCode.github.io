@@ -2,3 +2,23 @@
     margin-bottom: 3rem;
 }
 
+.blogPostPreview{
+    @apply
+    flex
+
+    mb-3
+    p-3
+
+    bg-gray-50
+}
+
+.blogPostTitle{
+    @apply
+    font-bold
+    text-lg
+}
+
+.blogPostPreview:hover {
+    @apply
+    bg-gray-100
+}
