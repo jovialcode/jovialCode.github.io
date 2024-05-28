@@ -7,11 +7,14 @@ import { Tags } from "../../components/blog/tags"
 
 const Index: React.FC<PageProps> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
-  const groupedByCategory: { [key: string]: Post[] } = posts.reduce((acc, post) => {
+  const groupedByCategory: { [key: string]: Post[] } = posts
+    .filter(post => post.node.frontmatter.category != 'Kafka')
+    .reduce((acc, post) => {
     const category = post.node.frontmatter.category
     if (!acc[category]) {
       acc[category] = []
     }
+
     acc[category].push(post)
     return acc
   }, {})
