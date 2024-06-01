@@ -62,7 +62,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        "icon": "src/static/images/icon.png",
+        "icon": "src/static/images/favicon.png",
       },
     },
     {
