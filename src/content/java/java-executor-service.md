@@ -3,7 +3,7 @@ slug: "java-executor-service"
 title: "Executors"
 date: "2023-05-11"
 category: "Java"
-featuredImage: "../static/images/contents/java/java_executorservice.png"
+featuredImage: "../../static/images/contents/java/java_executorservice.png"
 tag: ["JDK1.5", "Concurrency"]
 ---
 
@@ -106,7 +106,7 @@ class DirectExecutor implements Executor {
 # 
 
 ### Executors class
-![java_executor.png](../static/images/contents/java/java_executor.png)
+![java_executor.png](../../static/images/contents/java/java_executor.png)
 `ExecutorService`는 `Executor`를 상속하여 `Thread`를 생성하고 관리하기 위한 메서드를 제공합니다.
 `ExecutorService`를 직접 구현하는 것은 어렵거나 시간이 걸리기 때문에 
 `Concurrent API`에서는 Executors 클래스를 이용해 병렬 처리에 필요한 여러가지 메서드를 정의해서 제공합니다.

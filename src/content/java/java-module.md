@@ -3,7 +3,7 @@ slug: "module-java"
 title: "Modularity"
 date: "2024-04-27"
 category: "Java"
-featuredImage: "../static/images/contents/java/java9_module_structure.png"
+featuredImage: "../../static/images/contents/java/java9_module_structure.png"
 tag: ["JDK9", "Module"]
 ---
 
@@ -31,7 +31,7 @@ JVM이 구동될 때 필요한 모듈을 찾을 수 없으면 Missing Module 에
 이를 통해 런타임 중에 발생할 수 있는 잠재적인 문제를 사전에 방지할 수 있습니다.
 
 ### Module System
-![내부 이미지 경로 URL](../static/images/contents/java/java_modules.png)
+![내부 이미지 경로 URL](../../static/images/contents/java/java_modules.png)
 
 모듈 시스템을 적용하여 1개의 모놀리식이었던 JDK를 73개의 모듈로 세분화 하였습니다. java.base는 모듈 시스템의 기본이 되는 모듈입니다. java.base 외 다른 모듈은
 java.base를 항상 의존하고 있습니다. 73개의 모듈은 위와 같이 그래프로 표현이 가능하며 모듈 그래프를 통해서 모듈 어플리케이션이

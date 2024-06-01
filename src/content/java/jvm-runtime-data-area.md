@@ -3,7 +3,7 @@ slug: "jvm-runtime-data-area"
 title: "Runtime Memory in JVM"
 date: "2024-05-06"
 category: "Java"
-featuredImage: "../static/images/contents/java/jvm.png"
+featuredImage: "../../static/images/contents/java/jvm.png"
 tag: ["Core"]
 ---
 
@@ -18,7 +18,7 @@ Java로 작성된 코드는 javac로 컴파일되어 바이트 코드(bytecode)�
 
 # 
 ### Runtime Data Area
-![jvm](../static/images/contents/java/jvm-runtime-data-area-structure.png)
+![jvm](../../static/images/contents/java/jvm-runtime-data-area-structure.png)
 JVM은 자바 프로그램을 실행하는 동안 필요한 데이터를 `PC Register`, `Native Method Stack`, `Java Stack`, `Method Area`, `Heap`의 영역으로 나눠 관리합니다.
 `PC Register`, `Native Method Stack`, `Java Stack`은 스레드마다 생성되는 영역이며 `Method Area`, `Heap`은 모든 스레드가 함께 공유하는 영역입니다.
 
@@ -35,13 +35,13 @@ JVM에서의 멀티스레딩은 CPU 코어를 여러 스레드가 교대로 사�
 스레드는 메서드가 호출될 때마다 스택 프레임을 만들어 지역 변수 테이블, 피연산자 스택, 메서드 반환값 등의 메서드와 관련된 정보를 저장합니다.
 그리고 스택 프레임을 자바 스택에 push하고 메서드가 끝나면 pop하는 일을 반복합니다.
 
-![local-variable](../static/images/contents/java/java_local_variable.png)
+![local-variable](../../static/images/contents/java/java_local_variable.png)
 
 스택 프레임에 저장되는 지역 변수 테이블은 컴파일 타임에 알 수 있는 다양한 기본 데이터 타입, 객체 참조, 반환 주소 타입을 저장합니다.
 지역 변수 테이블이 필요한 공간은 컴파일 과정에서 할당되며 지역 변수 슬롯은 일반적으로 32비트로 64비트인 double타입을 제외하고 1개의 슬롯에 저장됩니다.
 
 ### Native Method Stack
-![natvie-stack](../static/images/contents/java/java_native_stack.png)
+![natvie-stack](../../static/images/contents/java/java_native_stack.png)
 네이티브 메서드 스택은 자바 스택과 비슷한 역할을 합니다. 다른 점은 네이티브 메서드를 호출하는 부분입니다.
 네이티브 메서드는 자바 프로그램의 일부로 작성되지 않은 코드로 보통 C나 C++와 같은 언어로 작성됩니다.
 스레드가 메서드 내부에서 네이티브 메서드를 호출하게되면 네이티브 메서드에 동적으로 연결되어 네이티브 메서드가 호출됩니다.

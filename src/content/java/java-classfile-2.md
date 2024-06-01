@@ -3,7 +3,7 @@ slug: "java-classfile-2"
 title: "ClassFile - 2"
 date: "2024-05-18"
 category: "Java"
-featuredImage: "../static/images/contents/java/java_bytecode.png"
+featuredImage: "../../static/images/contents/java/java_bytecode.png"
 tag: ["Core"]
 ---
 
@@ -11,7 +11,7 @@ tag: ["Core"]
 [`ClassFile-1`](/blog/java-classfile-1/) 에 이어서 클래스파일의 속성에 대해서 정리합니다.
 # 
 ### ClassFile Attribute
-![Classfile](../static/images/contents/java/java_classfile.png)
+![Classfile](../../static/images/contents/java/java_classfile.png)
 `클래스파일`은 클래스 메타 정보와 속성으로 구성되며
 `속성`은 클래스의 메타 정보를 제외한 `final`,`Exceptions`, `SourceFile`, `제네릭 타입`, `Code속성` 등의 클래스를 풍부하게 하는
 기능을 나타냅니다. `속성`은 `class_file`, `field_info`, `method_info`,`Code속성` 등에서 목적에 맞게 존재합니다.

@@ -3,7 +3,7 @@ slug: "java-completablefuture"
 title: "Completablefuture"
 date: "2023-05-19"
 category: "Java"
-featuredImage: "../static/images/contents/java/java_completablefuture.png"
+featuredImage: "../../static/images/contents/java/java_completablefuture.png"
 tag: ["JDK8", "Concurrency"]
 ---
 
@@ -173,7 +173,7 @@ public class CompletableFuture<T> implements Future<T>, CompletionStage<T>
 </div>
 
 
-![completable_future_method.png](../static/images/contents/java/java_completablefuture_method.png)
+![completable_future_method.png](../../static/images/contents/java/java_completablefuture_method.png)
 `CompletableFuture`의 메서드의 return값은 또 다른 `CompletableFuture`을 반환합니다.
 그러므로 `Task1`의 작업이 완료되면 `thenRun`과 같은 메서드를 이용하여 다음 `Task2`를 손쉽게 수행할 수 있습니다.
 위 메서드들을 활용하여 `Future`인터페이스의 한계점을 `CompletableFuture`클래스는 어떻게 보완할 수 있는지 살펴보겠습니다. 

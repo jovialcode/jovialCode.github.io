@@ -3,7 +3,7 @@ slug: "java-classfile-1"
 title: "ClassFile - 1"
 date: "2024-05-12"
 category: "Java"
-featuredImage: "../static/images/contents/java/java_bytecode.png"
+featuredImage: "../../static/images/contents/java/java_bytecode.png"
 tag: ["Core"]
 ---
 
@@ -13,7 +13,7 @@ tag: ["Core"]
 이러한 `ByteCode` 덕분에 `Java`는 `WORA`(Write Once, Run Anywhere)라는 강력한 특징을 갖게되었습니다.
 
 # 
-![javac_bytecode](../static/images/contents/java/javac_bytecode.png)
+![javac_bytecode](../../static/images/contents/java/javac_bytecode.png)
 `ByteCode`에는 또 다른 장점이 있습니다. 
 `JVM`(자바 가상 머신)은 초기 설계부터 가상 머신에 다른 언어를 실행할 가능성을 염두에 두었습니다.
 그래서 자바 외 다른 언어에서 `ByteCode`로 변환해주는 컴파일러만 있으면 `JVM`에서 실행될 수 있습니다.

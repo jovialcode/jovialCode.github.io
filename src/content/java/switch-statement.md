@@ -3,7 +3,7 @@ slug: "switch-statement"
 title: "Switch statement"
 date: "2023-04-20"
 category: "Java"
-featuredImage: "../static/images/contents/java/switch_expression.png"
+featuredImage: "../../static/images/contents/java/switch_expression.png"
 tag: ["JDK1.0", "JDK12"]
 ---
 ### Intro
