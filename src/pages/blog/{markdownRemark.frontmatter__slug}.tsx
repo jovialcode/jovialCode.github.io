@@ -46,7 +46,7 @@ export const query = graphql`
         slug
         featuredImage {
           childImageSharp {
-            gatsbyImageData(width: 600)
+            gatsbyImageData(height:400)
           }
         }
       }

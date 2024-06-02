@@ -185,6 +185,7 @@ deckgo-highlight-code {
 .Blog .tableWrapper{
     @apply
     overflow-x-auto
+    my-5
 }
 
 .Blog .tableWrapper table{
@@ -224,4 +225,10 @@ deckgo-highlight-code {
 
 code{
     font-family: 'NotoSans-Regular';
+}
+
+.Blog .codeWrapper{
+    @apply
+    overflow-x-auto
+    my-5
 }
