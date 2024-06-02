@@ -19,10 +19,12 @@ const Index: React.FC<PageProps> = ({ data }) => {
     return acc
   }, {})
 
+  const orderCategory = ['Flink', 'Java'];
+
   return (
     <Layout>
       <section>
-        {Object.keys(groupedByCategory)
+        {orderCategory
           .map(category => (
             <div className={classes.Category} key={category}>
               <h2 className={"flex items-center"}>
