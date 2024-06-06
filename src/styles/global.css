@@ -212,9 +212,18 @@ deckgo-highlight-code {
     mb-10
 }
 
-.imageWrapper-maxheight-300{
+.imageWrapper{
     @apply
-    h-4
+    text-center
+}
+
+.image{
+    @apply
+    inline-block
+    w-full
+    content-center
+    justify-items-center
+    justify-center
 }
 
 .divCenter{
