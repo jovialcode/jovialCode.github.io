@@ -1,6 +1,6 @@
 ---
 slug: "java-garbage-collection-1"
-title: "Garbage Collection-1"
+title: "Garbage Collection - 1"
 date: "2024-06-09"
 category: "Java"
 featuredImage: "../../static/images/contents/java/java_garbage_collection.png"
